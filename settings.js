@@ -8,7 +8,7 @@
   
     // Replace with your own subscription key, service region (e.g., "westus"),
     // and recognition language.
-    subscriptionKey:   "5da0f3061ae940f1be6ecf331048aa87",
+    subscriptionKey:   "",
     serviceRegion:     "eastus", // e.g., "westus"
     language:          "es-MX",
   
