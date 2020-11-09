@@ -19,7 +19,7 @@ module.exports = {
     translationConfig.speechRecognitionLanguage = settings.language;
 
     // target language is German.
-    translationConfig.addTargetLanguage("de-DE");
+    translationConfig.addTargetLanguage("en-Us");
 
     // create the translation recognizer.
     var recognizer = new sdk.TranslationRecognizer(translationConfig, audioConfig);
@@ -33,7 +33,7 @@ module.exports = {
     recognizer.recognizing = function (s, e) {
         var str = ("(recognizing) Reason: " + sdk.ResultReason[e.result.reason] + " Text: " + e.result.text + " Translations:");
 
-        var language = "de";
+        var language = "en";
         str += " [" + language + "] " + e.result.translations.get(language);
 
         console.log(str);
@@ -46,7 +46,7 @@ module.exports = {
     recognizer.recognized = function (s, e) {
         var str = "\r\n(recognized)  Reason: " + sdk.ResultReason[e.result.reason] + " Text: " + e.result.text + " Translations:";
 
-        var language = "de";
+        var language = "en";
         str += " [" + language + "] " + e.result.translations.get(language);
         str += "\r\n";
 
